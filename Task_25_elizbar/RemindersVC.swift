@@ -97,6 +97,7 @@ extension RemindersVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView:UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath:IndexPath){
         if editingStyle == .delete {
             tableView.beginUpdates()
+            LocalNotificationManager.setNotification(3, type: .seconds, repeats: false, title: "Reminder deleted", body: "Reminder '\(reminders[indexPath.row])' has been DELETED ", userInfo: ["aps":["Deleted":"Reminder"]])
             removefile(directoryPath: remindersPath, filepath: reminders[indexPath.row])
             reminders.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .left)

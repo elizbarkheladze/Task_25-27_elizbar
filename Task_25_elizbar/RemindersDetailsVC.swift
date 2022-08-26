@@ -38,14 +38,18 @@ class RemindersDetailsVC: UIViewController {
             manager.createFile(atPath: reminderUrl.path , contents: data)
             delegate?.DidSaveReminder()
             self.dismiss(animated: true)
+            LocalNotificationManager.setNotification(3, type: .seconds, repeats: false, title: "New Reminder", body: "Reminder '\(reminderTitleField.text!)' has been added ", userInfo: ["aps":["New":"Reminder"]])
+            
         }
         if reminderTitle != reminderTitleField.text && reminderTitle != ""{
             let directoryUrl = getDocymentsUrl()
             let remindersDirectoruUrl = directoryUrl.appendingPathComponent(remiderPath)
+            LocalNotificationManager.setNotification(3, type: .seconds, repeats: false, title: "Reminder edited", body: "Reminder '\(reminderTitleField.text!)' has been edited ", userInfo: ["aps":["Edited":"Reminder"]])
             do {
                 try manager.removeItem(at: remindersDirectoruUrl.appendingPathComponent("\(reminderTitle).txt"))
                 delegate?.DidSaveReminder()
                 self.dismiss(animated: true)
+                
             }catch{
                 print(error)
             }

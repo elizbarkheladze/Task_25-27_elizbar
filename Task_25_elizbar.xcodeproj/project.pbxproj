@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D11EDFC28B97083006EA003 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D11EDFB28B97083006EA003 /* LocalNotificationManager.swift */; };
 		2D3736D328B63E5A0077D9F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3736D228B63E5A0077D9F3 /* AppDelegate.swift */; };
 		2D3736D528B63E5A0077D9F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3736D428B63E5A0077D9F3 /* SceneDelegate.swift */; };
 		2D3736D728B63E5A0077D9F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3736D628B63E5A0077D9F3 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D11EDFB28B97083006EA003 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		2D3736CF28B63E5A0077D9F3 /* Task_25_elizbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task_25_elizbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3736D228B63E5A0077D9F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D3736D428B63E5A0077D9F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				2D3736E828B642E30077D9F3 /* RemindersDetailsVC.swift */,
 				2D3736EA28B651F20077D9F3 /* DirectoryCell.swift */,
 				2D3736EC28B65EAC0077D9F3 /* ReminderCell.swift */,
+				2D11EDFB28B97083006EA003 /* LocalNotificationManager.swift */,
 			);
 			path = Task_25_elizbar;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				2D3736ED28B65EAC0077D9F3 /* ReminderCell.swift in Sources */,
 				2D3736EB28B651F20077D9F3 /* DirectoryCell.swift in Sources */,
 				2D3736E928B642E30077D9F3 /* RemindersDetailsVC.swift in Sources */,
+				2D11EDFC28B97083006EA003 /* LocalNotificationManager.swift in Sources */,
 				2D3736D528B63E5A0077D9F3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

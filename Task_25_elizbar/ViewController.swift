@@ -59,6 +59,7 @@ class ViewController: UIViewController {
             do{
                 try self.manager.createDirectory(at: directoryPath, withIntermediateDirectories: true)
                 self.accesingDirectories()
+                LocalNotificationManager.setNotification(3, type: .seconds, repeats: false, title: "New Directory", body: "Directory '\(directryName)' has been added ", userInfo: ["aps":["New":"Directory"]])
                 
             }catch{
                 print(error)
